@@ -1,0 +1,39 @@
+.card:hover {
+    transform: translateY(0%) !important;
+}
+
+.watch-icon {
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    
+}
+
+#more {
+    display: none;
+}
+
+.showMore {
+    margin-bottom: 50px   !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.commentBtn {
+    border-color:#800279;
+    color: #800279;
+    margin-right: 7px;
+}
+
+.commentBtn:hover {
+    background-color:#800279 !important;
+    border-color:#800279;
+    
+    
+}
+
+div.dropdown-menu.show {
+   inset: 0px 127px auto auto !important;
+}

@@ -1,0 +1,43 @@
+#search-filter-icon {
+    cursor: pointer;
+    padding: 0.4rem;
+    
+}
+
+#search-filter-icon:hover {
+    background-color: #800279;
+    padding: 0.4rem;
+    color: aliceblue;
+    
+}
+
+input:checked+span {
+    color: #800279;
+    
+}
+
+.filter-column {
+    display: none;
+}
+
+
+
+  p.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-body {
+   
+    min-width: 0; /* This is important for text-overflow to work */
+  }
+
+  @media (max-width: 765px) {
+   .card-image
+   {
+       width: 100%;
+   }
+  }
+
+

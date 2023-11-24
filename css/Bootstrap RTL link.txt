@@ -1,0 +1,17 @@
+CDN
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap-v4-rtl/4.6.2-1/js/bootstrap.min.js
+
+LOCAL
+https://github.com/MahdiMajidzadeh/bootstrap-v4-rtl/blob/main/dist/css/bootstrap-rtl.css
+
+
+
+
+How to use 
+
+Add rtl class to any element and every thing inside that turn to RTL layout
+
+full page RTL add RTl to body tag
+<body class="rtl">
+
+NOTE: This package is designed for multilanguage projects to change all page direction just with adding rtl class, so all left and right classes is reversed when you are in rtl

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap intro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <style>
+    .color{
+      border: 1px solid black;
+      background-color: brown;
+      color: #fff;
+    }
+  </style>
+
+  </head>
+<body>
+    <h1 class="display-4 text-center">Welcome to bootstrap</h1>
+    <h1 class="display-4 text-right font-weight-bold"> عربي يا طويل العمر</h1>
+    <p class="text-right">جميع الحقوق محفوظة. لا يسمح بإعادة نشر، توزيع، نسخ أو اقتباس أي أجزاء من هذه الدورة دون اذن مسبق. إن رأيت أي جزء من هذه الدورة مقرصن على الإنترنت أو في أي مكان آخر، يرجى إبلاغنا بذلك.
+شكرًا لاحترامك حقوق الملكية. هذا يساعدنا على الاستثمار بمحتوى عربي عالي الجودة وبتطوير مزيد من الدورات المتخصصّة.جميع الحقوق محفوظة. لا يسمح بإعادة نشر، توزيع، نسخ أو اقتباس أي أجزاء من هذه الدورة دون اذن مسبق. إن رأيت أي جزء من هذه الدورة مقرصن على الإنترنت أو في أي مكان آخر، يرجى إبلاغنا بذلك.
+شكرًا لاحترامك حقوق الملكية. هذا يساعدنا على الاستثمار بمحتوى عربي عالي الجودة وبتطوير مزيد من الدورات المتخصصّة.</p>
+
+<table class="table table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+  </tr>
+</thead>
+  <tr class="bg-primary">
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+  </tr>
+  <tr>
+    <td class="table-success">Data 4</td>
+    <td>Data 5</td>
+    <td>Data 6</td>
+  </tr>
+  <tr class="table-danger">
+    <td>Data 4</td>
+    <td>Data 5</td>
+    <td>Data 6</td>
+  </tr>
+</table>
+
+<!-- mx-auto to center the 
+d-block to make it full width block -->
+<img class="mx-auto d-block" style="width: 50%" src="img/1.jpeg" alt="">
+
+<div class="text-center">
+    <!-- text center not for imgs -->
+    <!-- my margin for both top and bottom -->
+    <!-- mx  margin for both left and right -->
+    <img class="my-5 img-fluid img-thumbnail" src="https://setf.ngo/wp-content/uploads/2022/07/cropped-logo_new.png" alt="">
+</div>
+<hr>
+<!-- Grid system in bootstrip -->
+<img src="img/grid_sys.png" class="img-fluid mx-auto d-block" alt="grid">
+
+<div class="container" style="background-color: rgb(162, 122, 199);">
+ <p>test container</p>
+</div>
+
+<div class="container-fluid" style="background-color: rgb(143, 231, 209);">
+  <p>test container-fluid</p>
+ </div>
+
+
+ <!-- Raw and col grid sys -->
+
+ بدون سطر raw <br>
+كل ديف سيكون سطر كامل
+<div class="container">
+
+     <div class="col color">
+      testt row 1/3
+     </div>
+     <div class="col color">
+      testt row 1/3
+   </div>
+     <div class="col color">
+       testt row 1/3
+   </div>
+</div>
+
+اضافة Raw <br>
+تحوي الديفات الثلاثة يعني سيكون كل الديفات في سطر واحد
+هذه الحاوية تبقي على 3 اعمدة متجاوبة على كافة الشاشات
+  
+<div class="container">
+   <div class="row">
+     <div class="col color">
+      testt row 1/3
+     </div>
+     <div class="col color">
+      testt row 1/3
+   </div>
+     <div class="col color">
+       testt row 1/3
+   </div>
+</div>
+
+هذه الحاوية تبقي على 3 اعمدة متجاوبة حتى الوصول للشاشات المتوسطة
+اكبر او تساوي768   <br>
+-md
+<div class="container">
+ <div class="row">
+     <div class="col-md color">
+      testt row 1/3
+     </div>
+     <div class="col-md color">
+      testt row 1/3
+   </div>
+     <div class="col-md color">
+       testt row 1/3
+   </div>
+</div>
+
+ هذه الحاوية تبقي على 3 اعمدة متجاوبة حتى الوصول للشاشات الصغيرة
+ اكبر او تساوي 576px  <br>
+ -sm
+<div class="container">
+  <div class="row">
+      <div class="col-sm color">
+       testt row 1/3
+      </div>
+      <div class="col-sm color">
+       testt row 1/3
+    </div>
+      <div class="col-sm color">
+        testt row 1/3
+    </div>
+</div>
+
+
+اضافة Raw <br>
+تحديد عرض الديف 2 7 3 فقط في الشاشات الكبيرة اكبر او يساوي 992 بكسل
+<br>
+تحديد عرض الديف 1 9 2 فقط في الشاشات المتوسطة اكبر او يساوي 768 بكسل
+<br>
+اي شي اصغر من الشاشة المتوسطة رح ينزل كل ديف بسطر
+<div class="container">
+   <div class="row">
+     <div class="col-lg-2 col-md-2 color">
+      testt row 1/3
+     </div>
+     <div class="col-lg-7 col-md-9 color">
+      testt row 1/3
+   </div>
+     <div class="col-lg-3 col-md-1 color">
+       testt row 1/3
+   </div>
+</div>
+
+تحديد عرض الديف 12 اي سطر كامل للشاشات الصغيرة ومافوق اكبر او يساوي 576 بكسل
+<br>
+تحديد عرض الديف 4 اعمدة فقط في الشاشات الكبيرة اكبر او يساوي 992 بكسل
+<br>
+
+<div class="container">
+   <div class="row">
+     <div class="col-sm-12 col-lg-4 color">
+      testt row 1/3
+     </div>
+     <div class="col-sm-12 col-lg-4 color">
+      testt row 1/3
+   </div>
+     <div class="col-sm-12 col-lg-4 color">
+       testt row 1/3
+   </div>
+</div>
+
+بغض النظر عن الشاشة اربعة اعمدة ثابتة لكل عمود
+
+<div class="container">
+  <div class="row">
+    <div class="col color">
+     testt row 1/3
+    </div>
+    <div class="col color">
+     testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt 
+     row 1/3testt row 1/3testt row 1/3testt row 1/3
+  </div>
+    <div class="col color">
+      testt row 1/3
+  </div>
+</div>
+
+بغض النظر عن الشاشة اربعة اعمدة ثابتة لكل عمود
+مع عرض تلقائي للعمود الاوسط حسب المحتوى
+<div class="container">
+  <div class="row">
+    <div class="col color">
+     testt row 1/3
+    </div>
+    <div class="col-auto color">
+     testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt row 1/3testt 
+     row 1/3testt row 1/3testt row 1/3testt row 1/3
+  </div>
+    <div class="col color">
+      testt row 1/3
+  </div>
+</div>
+
+
+    <!-- هنا ترتيب الاستدعاء جدا مهم -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&display=swap');
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.navbar {
+box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.15);}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f8f8f8 !important;
+    
+}
+
+
+a {
+    color: #800279;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #000000;
+}
+
+#top-menu .logo{
+    background-color: #800279;
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav >.nav-link
+{
+    color: #fff;
+    background-color: #800279;
+    border-radius: 4px;
+}
+
+button {
+    background-color:  #800279 !important;
+    color: #fff !important;
+    border: 1px solid #800279 !important;
+}
+
+button:hover{
+    background-color:  #800279 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+.loginLink {
+    color: #800279 !important;
+}
+
+.modal .modal-header .close {
+    color: #800279 !important;
+    border-color: transparent !important;
+}
+
+.modal .modal-header .close:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+input.form-control:focus {
+    border-color: #800279 !important;
+    box-shadow: none !important;
+}
+
+
+
+.card .card-icons {
+    position: relative;
+}
+
+.card .card-title {
+    height: 3rem;
+    overflow: hidden;
+}
+
+time {
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.card .fa-play-circle {
+    position: absolute;
+    top: 43%;
+    right: 43%;
+    color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.card:hover .fa-play-circle {
+    display: inline;
+}
+
+.card:hover {
+    transform: translateY(-2%);
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+#top-menu .fa-bars {
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100vh !important;
+    background-color: #fff;  /* لاظهار الخلفية */
+    position: relative !important;
+    padding-top: 13px;
+    width: 250px;
+
+}
+
+
+#wrap {
+    
+    position: fixed;
+    z-index: 10;
+    width: 17rem;
+    display: none;
+    overflow-y: auto; /* Or overflow-y: scroll; if you always want the scrollbar */
+    
+}
+
+
+.purple  {
+    color: #800279;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: purple;
+    color: white;
+}
+
+.sidebar .list-group-item:hover a {
+    color: white;
+}
+
+.sidebar .list-group-item:hover .fa-solid {
+    color: white;
+}
+
+#overlay {
+    /* Initially hidden */
+    position: fixed;  /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Full width */
+    height: 100%;  /* Full height */
+    background-color: rgba(0, 0, 0, 0.7);  /* Black with 70% opacity */
+    z-index: 1;  /* Displayed below the menu */
+    display: none;
+    
+}
+
+
+
+
+.navbar .search-icon {
+    color: #800279;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    left: 132px;
+    display: none;
+}
+
+.navbar .search-icon:hover {
+color: #fff;
+background-color: #800279;
+}
+
+.navbar-nav {
+    margin-top: -20px;
+}
+
+@media (max-width: 1123px) {
+     .form-hide {
+        display: none !important;
+    }
+
+    .search-icon
+    {
+        display: inline !important;
+    }
+}
+
+
+
+ 
+.search-input {
+    position: fixed;
+    top: 72px;
+    border: none;
+    padding: 6px 23px;
+    height: 60px;
+    background-color: #efeeee;
+    display: none;
+    z-index: 1;
+}
+
+.container-fluid {
+    padding: 0px !important;
+  
+}
+
+/* following CSS will make the vertical scrollbar 10px wide: */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  p.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-body {
+   
+    min-width: 0; /* This is important for text-overflow to work */
+  }
+

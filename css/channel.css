@@ -1,0 +1,50 @@
+.vedio-section .card:hover {
+        transform: translateY(0%) !important;
+    }
+
+
+    .navbar {
+
+        padding-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 599px) {
+        .navbar {
+         font-size: 13px;
+        }
+
+
+    }
+
+    @media (max-width: 700px) {
+
+
+        #bar{
+            margin-top: 35px;
+        }
+    }
+
+
+
+    .search-input {
+        z-index: 100 !important;
+    }
+
+    
+.vedio-section {
+margin-left: 2.1rem;
+margin-right: 2.2rem;
+}
+
+.card-content {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+
+} 
+
+
+
+
+ 
+    

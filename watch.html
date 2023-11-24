@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة المشاهدة</title>
+
+  <!-- ترتيب الاستدعاء هنا مهم اول شي بوت ستراب بعدين التعديلات -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/watch.css">
+
+</head>
+
+<body class="mt-4">
+  <div id="overlay"></div>
+  <div id="top-menu">
+    <div class="container-fluid px-0">
+      <!-- fixed-top to make navbar fixed and full width -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3">
+        <i class="fas fa-bars fa-2x" id="baricon"></i>
+        <b>
+          <a class="navbar-brand ms-3" href="index.html">يوتيوبي
+            <span class="logo"> <i class="fas fa-play-circle"></i></span>
+        </b>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item active  ">
+              <a class="nav-link ms-1 me-2  " href="index.html" >الفيديوهات المقترحة<span
+                  class="sr-only "></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-1 px-3  " href="#" style="margin-top: 30px !important;">المرفوعة حديثا</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link  ms-1 px-3 " href="log.html" style="margin-top: 30px !important;">سجل المشاهدة </a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex my-2 my-lg-0">
+          <input class="form-hide form-control me-sm-2" type="search" placeholder="هل تبحث عن شيء؟"> <button
+            onclick="location.href='search.html';" class="form-hide btn btn-danger my-2 my-sm-0" type="submit">بحث</button>
+        </div>
+        <i class="fas fa-search me-4 search-icon " type="search"></i>
+        <a class="nav-link  p-2 loginLink" data-bs-toggle="modal" data-bs-target="#loginModal" href="#">تسجيل الدخول</a>
+      </nav>>
+      <input type="search" class="form-control search-input" placeholder="هل تبحث عن شيء؟">
+
+      <!-- Modal popup login -->
+      <div class="modal fade" id="loginModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">تسجيل الدخول</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email" class="col-form-label">البريد الإلكتروني</label> <input type="email"
+                    class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-form-label">كلمة المرور</label> <input type="password"
+                    class="form-control" id="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#">نسيت كلمة المرور</a> <!-- mx-auto to keep the item in the middle -->
+              <a href="#" class="mx-auto">إنشاء حساب</a> <button type="button" class="btn btn-primary">دخول</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- slide menu -->
+
+<div id="wrap" class="mt-4">
+  <div class="sidebar">
+    <ul class="list-group ps-0 list-group-flush">
+      <li class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-home me-2 purple"></i> <a href="#">الفيديوهات الرائجة </a>
+      </li>
+      <li class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-rss me-2 purple"></i> <a href="channel.html">قناتي</a>
+      </li>
+      <li class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-arrow-trend-up me-2 purple"></i> <a href="watch.html">آخر فيديو </a>
+      </li>
+      <li class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-magnifying-glass me-2 purple"></i> <a href="log.html"> سجل المشاهدة </a>
+      </li>
+      <li class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-magnifying-glass me-2 purple"></i> <a href="search.html"> البحث المتقدم</a>
+      </li>
+      
+        <a class="list-group-item list-group-item-action">تصميم حاقان يمان &copy 2023 </a>
+      
+    </ul>
+  </div>
+</div>
+
+  <div class="container-fluid px-0 mt-5">
+    <div class="card border-1  mx-5 p-3 ">
+
+      <div class="row g-0">
+        <div class="col-sm-6 ">
+
+          <video src="https://github.com/HsoubAcademy/youtuby/raw/master/video/hsoub.mp4" controls muted autoplay
+            poster="img/2.png" class="w-100" title="YouTube video player">
+        </div>
+        <div class="col-sm-6 ps-4">
+          <span class="d-block"><i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+            <a href="channel.html" class="channel-img">
+              <img src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+                alt="" class="rounded-circle ms-3  " width="30">
+              <span class="card-text ">أكاديمية حسوب</span>
+              <h4 class="card-block pt-3">كورس كراش جافا سكربت </h4>
+            </a>
+            <p class="">بوتستراب (بالإنجليزية: Bootstrap) كان يسمى سابقًا «تويتر بوتسبارة عن إطار عمل مفتوح المصدر
+              يُساعد على تصميم موابارة عن إطار عمل<span id="dots">...</span><span id="more"> مفتوح المصدر يُساعد على
+                تصميم مواتراب» (Twitter Bootstrap)
+                وهو عبارة عن إطار عمل مفتوح المصدر يُساعد على تصميم مواقع الويب
+            </p>
+            <button type="button" class="btn showMore">عرض المزيد</button>
+          </span>
+          <div class="watch-icon pt-3">
+            <i class="fas fa-heart bg-secondary p-1 rounded-circle text-white" title="احببته"> </i>
+            <i class="fas fa-clock bg-secondary p-1 rounded-circle text-white" title="مشاهدة لاحقا"> </i>
+            <i class="fas fa-share-square bg-secondary p-1 rounded-circle text-white" title="شارك"> </i>
+            <i class="fas fa-solid fa-list bg-secondary p-1 rounded-circle text-white" title="اضافة الى قائمة التشغيل">
+            </i>
+            <span class="ms-4">إبلاغ </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4 px-5 g-0 ">
+    <div class="col-lg-7">
+      <div class="comments">
+        <div class="comments-details mb-3">
+          <span>التعليقات</span>
+          <span class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              الترتيب بحسب
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">التاريخ</a>
+              <a class="dropdown-item" href="#"> التعليقات الأحدث</a>
+
+            </div>
+          </span>
+        </div>
+        <div class="puplic-comments">
+          <div class="form-group">
+
+            <textarea class="form-control mt-3" id="exampleFormControlTextarea1 " rows="4"
+              placeholder="اضافة تعليق عام"></textarea>
+            <button type="submit" class="btn btn-info mt-3 mb-3">تعليق</button>
+            <div class="container-fluid px-0">
+
+
+              
+                <div class="card card-inner mt-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-2 col-sm-3">
+                      <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" alt="">
+                      <p class="text-secondary text-center">منذ 20 دقيقة  </p>
+                    </div>
+                    <div class="col-md-10 col-sm-9">
+                      <p>
+                        <a class="float-start" href="#"><strong>Maniruzzaman Akash</strong></a>
+                        <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                        <span class="float-end"><i class="text-warning fa fa-star"></i></span>
+                      </p>
+                      <div class="clearfix"></div>
+                      <p> يؤدي إلى تغييرات جذرية في كيفية إجراء الأعمال والتفاعل الاجتماعي. بالنسبة للمبرمجين ومطوري الويب، يكون لديهم الفرصة للتأثير بشكل كبير على هذه التغييرات. يعتبر العمل على تطوير مهارات البرمجة والتصميم مهمًا ليس فقط لمواكبة التطورات التكنولوجية</p>
+                      <p>
+                        <a class="float-start btn btn-outline-primary commentBtn "> <i class="fa fa-reply"></i> تعليق</a>
+                        <a class="float-start btn text-white btn-danger ms-3"> <i class="fa fa-heart"></i>
+                          أعجبني</a>
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="card card-inner mt-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-2 col-sm-3 ">
+                          <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid" alt="">
+                          <p class="text-secondary text-center">منذ 15 دقيقة</p>
+                        </div>
+                        <div class="col-md-10 col-sm-9">
+                          <p><a href="#"><strong> صبحي الوجفي</strong></a></p>
+                          <p> يؤدي إلى تغييرات جذرية في كيفية إجراء الأعمال والتفاعل الاجتماعي. بالنسبة للمبرمجين ومطوري الويب، يكون لديهم الفرصة للتأثير بشكل كبير على هذه التغييرات. يعتبر العمل على تطوير مهارات البرمجة والتصميم مهمًا ليس فقط لمواكبة التطورات التكنولوجية</p>
+                          <p>
+                            <a class="float-start btn btn-outline-primary commentBtn"> <i class="fa fa-reply"></i> تعليق</a>
+                            <a class="float-start btn text-white btn-danger ms-3"> <i class="fa fa-heart"></i>
+                              أعجبني</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col  ps-md-3 ps-sm-0 ps-xs-0">
+      <h4 class="pt-xs-3 pt-md-0 " >الاقتراحات</h4>
+      <div class="card mb-4 p-2">
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+              alt="" class="w-100 ">
+          </div>
+          <div class="col-sm-8 ">
+            <div class="card-block">
+              <a href="watch.html" class="channel-img d-block">
+                <p class="card-block pt-1">كورس كراش سكربت </p>
+              </a>
+              <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+
+              <div class="d-block pt-2">
+                <a href="channel.html">
+                  <img
+                    src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+                    alt="" class="rounded-circle" width="30">
+                  
+                  <span class="card-text">أكاديمية حسوب</span>
+                  
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 p-2">
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+              alt="" class="w-100 ">
+          </div>
+          <div class="col-sm-8 ">
+            <div class="card-block">
+              <a href="watch.html" class="channel-img d-block">
+                <p class="card-block pt-1">كورس كراش سكربت </p>
+              </a>
+              <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+
+              <div class="d-block pt-2">
+                <a href="channel.html">
+                  <img
+                    src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+                    alt="" class="rounded-circle" width="30">
+                  <span class="card-text">أكاديمية حسوب</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 p-2">
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+              alt="" class="w-100 ">
+          </div>
+          <div class="col-sm-8 ">
+            <div class="card-block">
+              <a href="watch.html" class="channel-img d-block">
+                <p class="card-block pt-1">كورس كراش سكربت </p>
+              </a>
+              <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+
+              <div class="d-block pt-2">
+                <a href="channel.html">
+                  <img
+                    src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+                    alt="" class="rounded-circle" width="30">
+                  <span class="card-text">أكاديمية حسوب</span>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 p-2">
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+              alt="" class="w-100 ">
+          </div>
+          <div class="col-sm-8 ">
+            <div class="card-block">
+              <a href="watch.html" class="channel-img d-block">
+                <p class="card-block pt-1">كورس كراش سكربت </p>
+              </a>
+              <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+
+              <div class="d-block pt-2">
+                <a href="channel.html">
+                  <img
+                    src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+                    alt="" class="rounded-circle" width="30">
+                  <span class="card-text">أكاديمية حسوب</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4 p-2">
+        <div class="row">
+          <div class="col-sm-4 ">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+              alt="" class="w-100 ">
+          </div>
+          <div class="col-sm-8 ">
+            <div class="card-block">
+              <a href="watch.html" class="channel-img d-block">
+                <p class="card-block pt-1">كورس كراش سكربت </p>
+              </a>
+              <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+
+              <div class="d-block pt-2">
+                <a href="channel.html">
+                  <img
+                    src="https://as2.ftcdn.net/v2/jpg/03/37/00/77/1000_F_337007700_pxx7o6uwvWoANcoLwkZoADiHTeSQGUev.jpg"
+                    alt="" class="rounded-circle" width="30">
+                  <span class="card-text">أكاديمية حسوب</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- هنا ترتيب الاستدعاء جدا مهم -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+  <script src="js/JSEdits.js"></script>
+  <script src="js/watch.js"></script>
+</body>
+
+</html>
